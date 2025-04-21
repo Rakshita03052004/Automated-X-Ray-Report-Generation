@@ -1,0 +1,81 @@
+# Ignore Python cache and environment folders
+__pycache__/
+
+*.npy
+*.h5
+*.keras
+__MACOSX/
+
+*.pyc
+*.pyo
+*.pyd
+*.ipynb_checkpoints/
+.venv/
+venv/
+env/
+ENV/
+.Neo4jDesktop/
+
+
+
+# Ignore Python cache and virtual environments
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs and system files
+*.log
+.DS_Store
+
+# Ignore model weights or large files
+*.h5
+*.pt
+*.pkl
+*.ckpt
+
+# Ignore data files (if you don’t want to push them)
+*.csv
+*.xlsx
+*.zip
+data/
+
+# Ignore environment files (optional)
+.env
+
+# Ignore dataset files
+chest_xray/train/
+chest_xray/test/
+chest_xray/val/
+chest_xray/*.npy
+
+# Ignore system/editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+# .gitignore
+chest_xray/
+*.npy
+*.jpeg
+
+
+# Ignore Kaggle credentials (never push this)
+kaggle.json
+# Ignore dataset folder
+chest_xray_dataset/
+
+# Ignore kaggle.json if it exists
+kaggle.json
+
+# Ignore system files
+__pycache__/
+*.pyc
+.DS_Store
+
+# Ignore virtual environments
+venv/
+.env/
