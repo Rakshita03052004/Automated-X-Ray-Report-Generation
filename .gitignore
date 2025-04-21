@@ -9,19 +9,14 @@ __MACOSX/
 *.pyc
 *.pyo
 *.pyd
-*.ipynb_checkpoints/
-.venv/
-venv/
-env/
-ENV/
-.Neo4jDesktop/
+
 
 
 
 # Ignore Python cache and virtual environments
 __pycache__/
 *.py[cod]
-venv/
+
 env/
 
 # Ignore Jupyter Notebook checkpoints
