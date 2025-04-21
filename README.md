@@ -32,9 +32,43 @@ Dataset is **not included** in this repo. Use `download_dataset.py` or manually 
 
 
 ---
+Learning
+A deep learning-based system to detect respiratory diseases — Pneumonia, COVID-19, and Tuberculosis — from chest X-ray images using a Convolutional Neural Network (CNN). This project aims to assist radiologists and medical professionals, particularly in remote or understaffed regions, by providing an AI-powered preliminary diagnosis tool.
+
+Features
+Classifies X-rays into: Normal, Pneumonia, COVID-19, Tuberculosis
+Custom CNN-based image classifier
+Grad-CAM for visual interpretability
+Evaluation metrics: Accuracy, Precision, Recall, F1-Score
+Supports doctors in rapid, automated screening
+
+Tech Stack
+Language: Python 3.x
+Frameworks: TensorFlow, Keras
+Libraries: NumPy, Pandas, OpenCV, Matplotlib, Seaborn, scikit-learn
+Development: Jupyter Notebook / Google Colab
+
+
+#Installation
+Copy code
+Clone the repo
+git clone https://github.com/your-username/xray-disease-classifier.git
+cd xray-disease-classifier
+(Optional) Create a virtual environment  python -m venv env
+source env/bin/activate  # or env\Scripts\activate on Windows
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the notebook or script
+jupyter notebook  # or open in Google Colab
+
+Preprocessed with:
+Image resizing to 224x224
+Normalization to [0, 1]
+Data Augmentation: rotation, flipping, zoom, contrast
 
 •	Model Architecture: 
-
 o	Custom CNN: If you designed a CNN from scratch, provide a detailed description of each layer in the network: 
 	Specify the type of layer (Convolutional 2D, MaxPooling 2D, Flatten, Dense, Dropout).
 	For Convolutional layers: Number of filters, kernel size, stride, padding, activation function (e.g., ReLU).
@@ -47,6 +81,9 @@ o	Custom CNN: If you designed a CNN from scratch, provide a detailed description
 
 
 •	Training Details: 
+Optimizer: Adam  Loss: Categorical Crossentropy   Epochs: 50  batch Size: 32
+
+Early Stopping to prevent overfitting
 o	Loss Function: Specify the loss function used for training (e.g., Categorical Crossentropy, especially suitable for multi-class classification with one-hot encoded labels). Explain why this loss function was chosen.
 o	Optimizer: Detail the optimizer used (e.g., Adam, SGD, RMSprop). Specify the learning rate used and the reasons for choosing this initial value. Mention any learning rate scheduling techniques applied (e.g., reducing the learning rate on plateau).
 o	Batch Size: State the batch size used during training and explain the rationale behind this choice (e.g., balancing between training speed and gradient stability).
